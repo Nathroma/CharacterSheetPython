@@ -1,0 +1,21 @@
+<div class="stat-block">
+    <div class="stat-title">
+        <span class="stat-name">{{ stat_name }}</span>
+    </div>
+    <div class="stat-value">
+        <label for="stat-{{ stat_id }}">Force</label>
+        <input type="number" id="stat-{{ stat_id }}" class="stat-input">
+    </div>
+    <div class="mod-value">
+        <label for="mod-{{ stat_id }}">Valeur de Mod.</label>
+        <input type="number" id="mod-{{ stat_id }}" class="mod-input">
+    </div>
+    <div class="save-value">
+        <label for="save-{{ stat_id }}">Valeur de Sauv.</label>
+        <input type="number" id="save-{{ stat_id }}" class="save-input">
+    </div>
+    <div class="proficiency">
+        <label for="proficiency-{{ stat_id }}">Maîtrise</label>
+        <input type="checkbox" id="proficiency-{{ stat_id }}" class="proficiency-checkbox">
+    </div>
+</div>

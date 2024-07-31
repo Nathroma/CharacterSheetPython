@@ -28,32 +28,22 @@
         </section>
 
         <!-- Statistiques -->
-        <section class="stats">
-            <h2>Caractéristiques</h2>
-            <div>
-                <label for="strength">Force :</label>
-                <input type="number" id="strength">
-            </div>
-            <div>
-                <label for="dexterity">Dextérité :</label>
-                <input type="number" id="dexterity">
-            </div>
-            <!-- Ajoute ici d'autres statistiques -->
-        </section>
+        <div class="stats-container">
+            {% include 'characters/components/stat_block.html' with stat_name="FOR." stat_id="force" %}
+            {% include 'characters/components/stat_block.html' with stat_name="DEX." stat_id="dexterity" %}
+            {% include 'characters/components/stat_block.html' with stat_name="CON." stat_id="constitution" %}
+            {% include 'characters/components/stat_block.html' with stat_name="INT." stat_id="intelligence" %}
+            {% include 'characters/components/stat_block.html' with stat_name="WIS." stat_id="wisdom" %}
+            {% include 'characters/components/stat_block.html' with stat_name="CHA." stat_id="charisma" %}
+            <!-- Répéter pour les autres stats -->
+        </div>
 
         <!-- Compétences -->
-        <section class="skills">
-            <h2>Compétences</h2>
-            <div>
-                <label for="acrobatics">Acrobaties :</label>
-                <input type="number" id="acrobatics">
-            </div>
-            <div>
-                <label for="arcana">Arcanes :</label>
-                <input type="number" id="arcana">
-            </div>
-            <!-- Ajoute ici d'autres compétences -->
-        </section>
+        <div class="skills-container">
+            {% include 'characters/components/skill_block.html' with skill_name="Acrobaties" skill_id="acrobatics" skill_stat="DEX" %}
+            {% include 'characters/components/skill_block.html' with skill_name="Arcanes" skill_id="arcana" skill_stat="INT" %}
+            <!-- Répéter pour les autres compétences -->
+        </div>
 
         <!-- Ajoute d'autres sections pour les armes, équipements, etc. -->
     </div>

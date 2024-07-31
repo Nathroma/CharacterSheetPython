@@ -47,3 +47,78 @@ h2 {
     border-bottom: 2px solid #ccc;
     padding-bottom: 5px;
 }
+
+/* styles.css */
+
+/* Conteneur principal pour une statistique */
+.stat-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Bloc principal de la statistique */
+.stat-block {
+    border: 2px solid #4C4C4C; /* Bordure générale */
+    padding: 10px;
+    display: inline-block;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    width: 300px;
+    position: relative;
+}
+
+/* En-tête avec l'icône et l'abréviation */
+.stat-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.stat-header img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.stat-abbr {
+    font-size: 18px;
+    font-weight: bold;
+    color: #B71C1C; /* Couleur personnalisée pour FOR. */
+}
+
+/* Style des boîtes de valeurs */
+.stat-box {
+    border: 2px solid #B71C1C; /* Couleur personnalisée pour FOR. */
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+.stat-box label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #4C4C4C;
+}
+
+.stat-box input {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #B71C1C; /* Couleur personnalisée pour FOR. */
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+/* Proficiency (Maîtrise) */
+.stat-proficiency {
+    display: flex;
+    align-items: center;
+}
+
+.stat-proficiency input {
+    margin-right: 5px;
+}
