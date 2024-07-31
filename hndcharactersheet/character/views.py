@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def fiche_personnage(request):
+    return render(request, 'characters/fiche.html')
